@@ -19,5 +19,6 @@ controller:
     enable-ocsp: "true"
     server-tokens: "false"
     use-proxy-protocol: "true"
+    http-redirect-code: "301"
   extraArgs:
     enable-ssl-passthrough: true
