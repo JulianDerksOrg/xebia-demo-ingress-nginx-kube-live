@@ -1,0 +1,20 @@
+scope:
+  enabled: false
+
+defaultBackend:
+  enabled: false
+
+controller:
+  kind: "DaemonSet"
+  service:
+    externalTrafficPolicy: Local
+    loadBalancerIP: 34.7.138.153
+
+  allowSnippetAnnotations: true
+  extraEnvs:
+    - name: TZ
+      value: Europe/Amsterdam
+  config:
+    service-upstream: "true"
+  extraArgs:
+    enable-ssl-passthrough: true
