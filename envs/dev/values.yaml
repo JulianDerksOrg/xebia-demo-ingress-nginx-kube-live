@@ -16,8 +16,8 @@ controller:
       value: Europe/Amsterdam
   config:
     service-upstream: "true"
-    use-forwarded-headers: "true"
-    compute-full-forwarded-for: "true"
-    use-proxy-protocol: "false"
+    enable-ocsp: "true"
+    server-tokens: "false"
+    use-proxy-protocol: "true"
   extraArgs:
     enable-ssl-passthrough: true
