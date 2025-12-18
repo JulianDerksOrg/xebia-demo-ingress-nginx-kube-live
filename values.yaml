@@ -5,10 +5,12 @@ defaultBackend:
   enabled: false
 
 controller:
-  kind: "DaemonSet"
+  kind: Deployment
+  replicaCount: 2
+
   service:
-    externalTrafficPolicy: Local
     loadBalancerIP: 34.7.138.153
+    # externalTrafficPolicy: Local
 
   allowSnippetAnnotations: true
   extraEnvs:
